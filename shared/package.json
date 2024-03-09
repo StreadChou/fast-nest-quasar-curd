@@ -1,0 +1,18 @@
+{
+  "name": "shared",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "patch": "build && npm version patch --no-git-tag-version",
+    "minor": "build && npm version minor --no-git-tag-version",
+    "major": "build && npm version major --no-git-tag-version",
+    "clean": "rm -rf node_modules && rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
