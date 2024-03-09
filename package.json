@@ -13,6 +13,7 @@
   ],
   "scripts": {
     "server:start:dev": "yarn workspace backend run start:dev",
+    "frontend:start:dev": "yarn workspace frontend run dev",
     "shared:build": "yarn workspace shared run build"
   }
 }
